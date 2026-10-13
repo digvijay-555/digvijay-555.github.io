@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digvijay Deshmukh | Software Engineer</title>
+  <meta name="description" content="Portfolio of Digvijay Deshmukh - Software Engineer, Ex-Google SWE Intern, and IIIT Lucknow CSE. Specializing in distributed systems, backend architectures, and high-performance web applications." />
+  <meta name="author" content="Digvijay Deshmukh" />
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Digvijay Deshmukh | Software Engineer" />
+  <meta property="og:description" content="Ex-Google SWE Intern • IIIT Lucknow • Distributed Systems, Backend Architecture & Modern Full-Stack" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (Clean Terminal SVG Icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='4 17 10 11 4 5'></polyline><line x1='12' y1='19' x2='20' y2='19'></line></svg>" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: '#06b6d4',
+              indigo: '#6366f1',
+              emerald: '#10b981',
+              dark: '#080c14',
+              card: '#0f172a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-[#080c14] dark:text-slate-100 transition-colors duration-300 antialiased selection:bg-indigo-100 selection:text-indigo-950 dark:selection:bg-indigo-500/30 dark:selection:text-white">
+
+  <!-- Subtle Architectural Grid Background -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute inset-0 bg-grid-pattern radial-mask opacity-75"></div>
+    <!-- Soft, elegant ambient light washes -->
+    <div class="absolute -top-32 -left-32 w-80 h-80 bg-indigo-500/5 dark:bg-indigo-500/10 rounded-full blur-[100px] animate-pulse-glow"></div>
+    <div class="absolute top-1/2 -right-32 w-80 h-80 bg-blue-500/5 dark:bg-cyan-500/10 rounded-full blur-[100px] animate-pulse-glow" style="animation-delay: 3s;"></div>
+  </div>
+
+  <!-- Main Wrapper -->
+  <div class="relative z-10 flex flex-col min-h-screen">
+
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 glass-nav transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Brand / Identity -->
+        <a href="#hero" class="flex items-center space-x-3 group">
+          <div class="w-10 h-10 rounded-xl bg-slate-900 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 flex items-center justify-center shadow-sm group-hover:border-indigo-500 dark:group-hover:border-cyan-400 transition-all">
+            <span class="font-mono font-bold text-indigo-600 dark:text-cyan-400 text-sm">DD</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold text-base tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-cyan-400 transition-colors">
+              Digvijay Deshmukh
+            </span>
+            <div class="flex items-center space-x-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span class="text-[11px] text-slate-600 dark:text-slate-400 font-mono">Ex-Google • IIIT Lucknow</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-7 text-sm font-medium">
+          <a href="#about" class="nav-link text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">About</a>
+          <a href="#experience" class="nav-link text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Experience</a>
+          <a href="#projects" class="nav-link text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Projects</a>
+          <a href="#skills" class="nav-link text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Skills</a>
+          <a href="#terminal" class="nav-link text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Terminal</a>
+          <a href="#contact" class="nav-link text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right Action Buttons -->
+        <div class="hidden md:flex items-center space-x-3">
+          <!-- View Resume CTA -->
+          <a 
+            href="https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="px-4 py-2 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-cyan-300 border border-indigo-200 dark:border-cyan-500/30 text-xs font-semibold font-mono flex items-center space-x-1.5 transition-all shadow-sm dark:shadow-none"
+            title="Open Digvijay's Official Resume"
+          >
+            <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+            <span>Resume</span>
+            <i data-lucide="external-link" class="w-3 h-3 opacity-70"></i>
+          </a>
+
+          <!-- Theme Switcher -->
+          <button id="theme-toggle-btn" class="p-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-700 hover:text-indigo-600 border border-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-cyan-400 dark:border-slate-700/60 transition-all shadow-sm dark:shadow-none" aria-label="Toggle Dark/Light Mode">
+            <i data-lucide="sun" class="w-4 h-4 theme-toggle-icon"></i>
+          </button>
+
+          <!-- Contact Button -->
+          <a href="#contact" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs transition-all shadow-sm hover:shadow-indigo-600/20 dark:bg-indigo-600 dark:hover:bg-indigo-500">
+            Get in Touch
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden items-center space-x-2">
+          <a 
+            href="https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 dark:bg-slate-800 dark:text-cyan-300 text-xs font-mono font-semibold border border-indigo-200 dark:border-slate-700 flex items-center space-x-1"
+          >
+            <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+            <span>Resume</span>
+          </a>
+          <button id="theme-toggle-mobile" class="p-2 rounded-lg bg-white text-slate-700 hover:text-indigo-600 dark:bg-slate-800 dark:text-slate-300 border border-slate-200 dark:border-transparent shadow-sm" aria-label="Toggle Theme">
+            <i data-lucide="sun" class="w-4 h-4 theme-toggle-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="p-2 rounded-lg bg-white text-slate-700 hover:text-slate-900 dark:bg-slate-800 dark:text-slate-300 dark:hover:text-white border border-slate-200 dark:border-transparent shadow-sm" aria-label="Open Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 dark:border-slate-800 bg-white/98 dark:bg-[#080c14]/98 backdrop-blur-xl px-5 pt-3 pb-6 space-y-3">
+        <a href="#about" class="mobile-nav-link block py-2 text-slate-800 dark:text-slate-200 font-medium">About</a>
+        <a href="#experience" class="mobile-nav-link block py-2 text-slate-800 dark:text-slate-200 font-medium">Experience</a>
+        <a href="#projects" class="mobile-nav-link block py-2 text-slate-800 dark:text-slate-200 font-medium">Projects</a>
+        <a href="#skills" class="mobile-nav-link block py-2 text-slate-800 dark:text-slate-200 font-medium">Skills</a>
+        <a href="#terminal" class="mobile-nav-link block py-2 text-slate-800 dark:text-slate-200 font-medium">CLI Terminal</a>
+        <a href="#contact" class="mobile-nav-link block py-2 text-slate-800 dark:text-slate-200 font-medium">Contact</a>
+        <div class="pt-2 flex flex-col gap-2">
+          <a href="https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="mobile-nav-link block text-center py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-semibold text-xs border border-slate-200 dark:border-slate-700">View Official Resume (PDF)</a>
+          <a href="#contact" class="mobile-nav-link block text-center py-2.5 rounded-xl bg-indigo-600 text-white font-semibold text-xs shadow-md">Get In Touch</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Column -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          
+          <!-- Badges -->
+          <div class="flex flex-wrap items-center gap-2">
+            <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-xs font-mono font-semibold text-amber-900 dark:bg-amber-500/10 dark:border-amber-500/30 dark:text-amber-300">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              <span>Ex-Google SWE Intern</span>
+            </div>
+            <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-xs font-mono font-semibold text-indigo-700 dark:bg-slate-800 dark:border-cyan-500/30 dark:text-cyan-300">
+              <i data-lucide="graduation-cap" class="w-3.5 h-3.5"></i>
+              <span>IIIT Lucknow (CSE)</span>
+            </div>
+          </div>
+
+          <!-- Main Headline -->
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
+              Digvijay <br class="hidden sm:inline" />
+              <span class="gradient-text">Deshmukh</span>
+            </h1>
+            <div class="h-10 sm:h-12 flex items-center text-lg sm:text-2xl font-mono text-slate-800 dark:text-slate-200 font-medium">
+              <span id="typing-text" class="text-indigo-600 dark:text-cyan-400 font-semibold"></span>
+              <span class="animate-blink text-indigo-600 dark:text-cyan-400 font-bold ml-1">_</span>
+            </div>
+          </div>
+
+          <!-- Subtitle / Engineering Pitch -->
+          <p class="text-base sm:text-lg text-slate-700 dark:text-slate-300 max-w-2xl leading-relaxed">
+            Software Engineer specializing in resilient backend architectures, low-latency microservices, distributed systems, and production full-stack platforms. Building software engineered to perform at scale.
+          </p>
+
+          <!-- Primary CTAs -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <!-- View Resume Primary Action -->
+            <a 
+              href="https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-md hover:shadow-indigo-600/30 transition-all flex items-center space-x-2.5 transform hover:-translate-y-0.5"
+            >
+              <i data-lucide="file-text" class="w-4 h-4"></i>
+              <span>View Resume (PDF)</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-80"></i>
+            </a>
+
+            <!-- Explore Projects -->
+            <a 
+              href="#projects" 
+              class="px-5 py-3.5 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-semibold text-sm border border-slate-200 shadow-sm dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-white dark:border-slate-700 transition-all flex items-center space-x-2"
+            >
+              <span>Explore Projects</span>
+              <i data-lucide="arrow-down" class="w-4 h-4 text-slate-500 dark:text-slate-400"></i>
+            </a>
+
+            <!-- Open Terminal -->
+            <a 
+              href="#terminal" 
+              class="px-4 py-3.5 rounded-xl bg-white hover:bg-slate-100 text-slate-700 font-semibold text-sm border border-slate-200 shadow-sm dark:bg-slate-800/80 dark:hover:bg-slate-700 dark:text-slate-300 dark:border-slate-700 transition-all flex items-center space-x-2"
+              title="Open Terminal"
+            >
+              <i data-lucide="terminal" class="w-4 h-4 text-indigo-600 dark:text-cyan-400"></i>
+              <span>CLI</span>
+            </a>
+
+            <!-- Social Links -->
+            <div class="flex items-center space-x-2 pl-1">
+              <a href="https://github.com/digvijay-555" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white hover:bg-slate-100 text-slate-700 hover:text-indigo-600 border border-slate-200 shadow-sm dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-cyan-400 dark:border-slate-700 transition-colors" title="GitHub (@digvijay-555)">
+                <i data-lucide="github" class="w-4 h-4"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/digvijaydeshmukh555" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white hover:bg-slate-100 text-slate-700 hover:text-indigo-600 border border-slate-200 shadow-sm dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-indigo-400 dark:border-slate-700 transition-colors" title="LinkedIn Profile">
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+              </a>
+              <a href="https://x.com/0xdigvijay555" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white hover:bg-slate-100 text-slate-700 hover:text-indigo-600 border border-slate-200 shadow-sm dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-cyan-400 dark:border-slate-700 transition-colors" title="Twitter / X (@0xdigvijay555)">
+                <i data-lucide="twitter" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Column: Candidate & Architectural Telemetry -->
+        <div class="lg:col-span-5">
+          <div class="glass-panel p-6 sm:p-7 rounded-2xl border border-slate-200 dark:border-slate-700/80 shadow-xl relative animate-float">
+            <!-- Window Title Bar -->
+            <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800 mb-4">
+              <div class="flex items-center space-x-2">
+                <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+                <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+                <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+              </div>
+              <span class="text-xs font-mono text-slate-600 dark:text-slate-400 font-medium">digvijay@deceptor:~$ cat profile.json</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-50 text-emerald-800 border border-emerald-200 dark:bg-emerald-500/20 dark:text-emerald-400 dark:border-emerald-500/30 font-semibold">VERIFIED</span>
+            </div>
+
+            <!-- Profile Matrix Data -->
+            <div class="font-mono text-xs space-y-2.5">
+              <div class="flex justify-between items-center text-slate-600 dark:text-slate-400">
+                <span class="text-slate-500 dark:text-slate-500">candidate.name</span>
+                <span class="text-slate-900 dark:text-white font-bold">Digvijay Deshmukh</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-600 dark:text-slate-400">
+                <span class="text-slate-500 dark:text-slate-500">experience.intern</span>
+                <span class="text-amber-800 dark:text-amber-300 font-semibold">Google (Summer 2024)</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-600 dark:text-slate-400">
+                <span class="text-slate-500 dark:text-slate-500">education.degree</span>
+                <span class="text-slate-900 dark:text-slate-200 font-medium">B.Tech CSE • IIIT Lucknow</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-600 dark:text-slate-400">
+                <span class="text-slate-500 dark:text-slate-500">core.stack</span>
+                <span class="text-indigo-600 dark:text-cyan-400 font-semibold">Go, Node.js, TypeScript, Postgres</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-600 dark:text-slate-400">
+                <span class="text-slate-500 dark:text-slate-500">infrastructure</span>
+                <span class="text-slate-900 dark:text-slate-200 font-medium">Docker, Kubernetes, AWS, Linux</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-600 dark:text-slate-400">
+                <span class="text-slate-500 dark:text-slate-500">github.handle</span>
+                <span class="text-indigo-600 dark:text-cyan-400 font-medium">@digvijay-555</span>
+              </div>
+
+              <!-- Quick Verification Box -->
+              <div class="mt-4 p-3 rounded-xl bg-slate-900 border border-slate-800 font-mono text-[11px] text-slate-300 space-y-1.5 shadow-inner">
+                <div class="flex items-center justify-between text-slate-400">
+                  <span class="text-emerald-400">✓ Systems Verification</span>
+                  <span class="text-[10px] text-slate-500">git:production</span>
+                </div>
+                <p class="text-slate-300">Live: <span class="text-cyan-300">expense-tracker-745g.vercel.app</span></p>
+                <p class="text-slate-300">Manifests: <span class="text-indigo-300">github.com/digvijay-555/Watch-Along</span></p>
+              </div>
+
+              <!-- Direct Resume Link Inside Window -->
+              <div class="pt-3">
+                <a 
+                  href="https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="w-full py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs border border-slate-300 dark:bg-slate-800/80 dark:hover:bg-slate-700 dark:text-cyan-300 dark:border-cyan-500/30 transition-all flex items-center justify-center space-x-2"
+                >
+                  <i data-lucide="file-check" class="w-4 h-4 text-indigo-600 dark:text-cyan-400"></i>
+                  <span>Inspect Official Resume (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Bar (Clean, Grounded, High-Contrast) -->
+      <div class="mt-14 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        <div class="glass-panel p-5 rounded-2xl border border-slate-200 dark:border-slate-800 text-center shadow-sm dark:shadow-none">
+          <div class="text-xl sm:text-2xl font-extrabold text-amber-800 dark:text-amber-300 font-mono mb-0.5 tracking-tight">Google</div>
+          <div class="text-xs text-slate-600 dark:text-slate-400 font-medium">SWE Intern (Summer 2024)</div>
+        </div>
+        <div class="glass-panel p-5 rounded-2xl border border-slate-200 dark:border-slate-800 text-center shadow-sm dark:shadow-none">
+          <div class="text-xl sm:text-2xl font-extrabold text-indigo-700 dark:text-cyan-400 font-mono mb-0.5 tracking-tight">IIIT Lucknow</div>
+          <div class="text-xs text-slate-600 dark:text-slate-400 font-medium">B.Tech Computer Science</div>
+        </div>
+        <div class="glass-panel p-5 rounded-2xl border border-slate-200 dark:border-slate-800 text-center shadow-sm dark:shadow-none">
+          <div class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white font-mono mb-0.5 tracking-tight">15<span class="text-indigo-600 dark:text-cyan-400">+</span></div>
+          <div class="text-xs text-slate-600 dark:text-slate-400 font-medium">GitHub Repositories</div>
+        </div>
+        <div class="glass-panel p-5 rounded-2xl border border-slate-200 dark:border-slate-800 text-center shadow-sm dark:shadow-none">
+          <div class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white font-mono mb-0.5 tracking-tight">Production</div>
+          <div class="text-xs text-slate-600 dark:text-slate-400 font-medium">Fullstack & Microservices</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Career Milestones Section -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-mono text-indigo-600 dark:text-cyan-400 uppercase tracking-widest font-bold">Engineering Track Record</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">Experience & Education</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Work at Google, computer science education at IIIT Lucknow, and open-source systems development.</p>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="relative max-w-4xl mx-auto mb-12">
+        <div class="timeline-line"></div>
+        <div id="experience-timeline" class="space-y-6">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+
+      <!-- Direct Resume Download Banner -->
+      <div class="max-w-2xl mx-auto glass-panel p-6 rounded-2xl border border-slate-200 dark:border-slate-800 text-center space-y-3 shadow-sm dark:shadow-none">
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Looking for the complete resume?</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+          Access the official, updated resume document containing detailed project breakdowns, coursework, and technical skills.
+        </p>
+        <div class="pt-2">
+          <a 
+            href="https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-flex items-center space-x-2 px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs transition-all shadow-sm"
+          >
+            <i data-lucide="file-down" class="w-4 h-4"></i>
+            <span>Open Resume on Google Drive</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-80"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Showcase Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-mono text-indigo-600 dark:text-cyan-400 uppercase tracking-widest font-bold">Featured Repositories</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">Engineered Software Projects</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Production web applications, microservice architectures, and systems tooling from my verified GitHub.</p>
+      </div>
+
+      <!-- Project Category Filter Pills -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <button class="project-filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-indigo-600 text-white shadow-md shadow-indigo-600/20 dark:bg-cyan-500 dark:text-slate-950 dark:shadow-cyan-500/25" data-filter="all">All Projects</button>
+        <button class="project-filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all text-slate-700 hover:text-slate-900 bg-white border border-slate-200 hover:bg-slate-50 shadow-sm dark:text-slate-400 dark:hover:text-white dark:bg-slate-800/60 dark:border-transparent" data-filter="fullstack">Full-Stack</button>
+        <button class="project-filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all text-slate-700 hover:text-slate-900 bg-white border border-slate-200 hover:bg-slate-50 shadow-sm dark:text-slate-400 dark:hover:text-white dark:bg-slate-800/60 dark:border-transparent" data-filter="backend">Backend & APIs</button>
+        <button class="project-filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all text-slate-700 hover:text-slate-900 bg-white border border-slate-200 hover:bg-slate-50 shadow-sm dark:text-slate-400 dark:hover:text-white dark:bg-slate-800/60 dark:border-transparent" data-filter="systems">Web3 & Systems</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 gap-7">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-mono text-indigo-600 dark:text-cyan-400 uppercase tracking-widest font-bold">Technical Arsenal</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">Skills & Technologies</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Categorized by engineering domain with genuine operational context.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <button class="skill-filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-indigo-600 text-white shadow-md shadow-indigo-600/20 dark:bg-cyan-500 dark:text-slate-950 dark:shadow-cyan-500/25" data-category="all">All Disciplines</button>
+        <button class="skill-filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all text-slate-700 hover:text-slate-900 bg-white border border-slate-200 hover:bg-slate-50 shadow-sm dark:text-slate-400 dark:hover:text-white dark:bg-slate-800/60 dark:border-transparent" data-category="backend">Backend & Systems</button>
+        <button class="skill-filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all text-slate-700 hover:text-slate-900 bg-white border border-slate-200 hover:bg-slate-50 shadow-sm dark:text-slate-400 dark:hover:text-white dark:bg-slate-800/60 dark:border-transparent" data-category="databases">Databases & Cache</button>
+        <button class="skill-filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all text-slate-700 hover:text-slate-900 bg-white border border-slate-200 hover:bg-slate-50 shadow-sm dark:text-slate-400 dark:hover:text-white dark:bg-slate-800/60 dark:border-transparent" data-category="devops">DevOps & Cloud</button>
+        <button class="skill-filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all text-slate-700 hover:text-slate-900 bg-white border border-slate-200 hover:bg-slate-50 shadow-sm dark:text-slate-400 dark:hover:text-white dark:bg-slate-800/60 dark:border-transparent" data-category="frontend">Frontend & Web</button>
+      </div>
+
+      <!-- Skills Dynamic Grid -->
+      <div id="skills-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Emulator Section -->
+    <section id="terminal" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-mono text-indigo-600 dark:text-cyan-400 uppercase tracking-widest font-bold">Interactive Shell</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mt-2">Digvijay CLI v2.4</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Test out commands directly in the embedded terminal emulator or click the chips below.</p>
+      </div>
+
+      <div class="max-w-4xl mx-auto terminal-window border border-slate-300 dark:border-slate-700/80 overflow-hidden shadow-2xl">
+        <!-- Terminal Header -->
+        <div class="bg-slate-900 px-4 py-3 flex items-center justify-between border-b border-slate-800">
+          <div class="flex items-center space-x-2">
+            <div class="w-3 h-3 rounded-full bg-rose-500"></div>
+            <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+            <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          </div>
+          <div class="text-xs font-mono text-slate-300 flex items-center space-x-2">
+            <i data-lucide="terminal" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span>guest@digvijay-portfolio:~ (bash)</span>
+          </div>
+          <div class="text-[11px] font-mono text-slate-500 hidden sm:block">UTF-8</div>
+        </div>
+
+        <!-- Terminal Output Screen -->
+        <div id="terminal-body" class="p-4 sm:p-6 h-72 sm:h-80 overflow-y-auto space-y-2 bg-[#080c14]">
+          <!-- Populated by app.js -->
+        </div>
+
+        <!-- Terminal Prompt Input -->
+        <div class="p-4 bg-slate-950 border-t border-slate-800 flex items-center space-x-3">
+          <span class="text-cyan-400 font-mono text-xs sm:text-sm font-semibold shrink-0">guest@digvijay:~$</span>
+          <input 
+            type="text" 
+            id="terminal-input" 
+            placeholder="Type 'help', 'resume', 'experience', 'projects', 'sudo hire'..." 
+            class="w-full bg-transparent border-none outline-none font-mono text-xs sm:text-sm text-white placeholder-slate-500 focus:ring-0"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+
+        <!-- Quick Launch Command Pills -->
+        <div class="p-3 bg-slate-900 border-t border-slate-800 flex flex-wrap items-center gap-2">
+          <span class="text-[11px] text-slate-400 font-mono mr-2">Quick Commands:</span>
+          <button class="terminal-chip px-2.5 py-1 text-xs font-mono rounded bg-slate-800 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition-colors" data-cmd="about">about</button>
+          <button class="terminal-chip px-2.5 py-1 text-xs font-mono rounded bg-slate-800 hover:bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 transition-colors" data-cmd="resume">resume</button>
+          <button class="terminal-chip px-2.5 py-1 text-xs font-mono rounded bg-slate-800 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 transition-colors" data-cmd="experience">experience</button>
+          <button class="terminal-chip px-2.5 py-1 text-xs font-mono rounded bg-slate-800 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition-colors" data-cmd="projects">projects</button>
+          <button class="terminal-chip px-2.5 py-1 text-xs font-mono rounded bg-slate-800 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition-colors" data-cmd="skills">skills</button>
+          <button class="terminal-chip px-2.5 py-1 text-xs font-mono rounded bg-slate-800 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 transition-colors" data-cmd="sudo hire">sudo hire</button>
+          <button class="terminal-chip px-2.5 py-1 text-xs font-mono rounded bg-slate-800 hover:bg-rose-500/20 text-rose-300 border border-rose-500/30 transition-colors" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Narrative & Engineering Philosophy -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs font-mono text-indigo-600 dark:text-cyan-400 uppercase tracking-widest font-bold">About & Background</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Engineering Approach</h2>
+          
+          <div class="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+            <p>
+              I am <span class="text-slate-900 dark:text-white font-semibold">Digvijay Deshmukh</span>, a software engineer with practical industry experience from my software engineering internship at <span class="text-amber-800 dark:text-amber-300 font-semibold">Google</span> and a rigorous academic foundation in Computer Science & Engineering from <span class="text-indigo-600 dark:text-cyan-400 font-semibold">IIIT Lucknow</span>.
+            </p>
+            <p>
+              My focus centers on backend architectures, low-latency microservices, distributed systems, and real-time platforms. Whether profiling RPC endpoints, containerizing microservices with Kubernetes manifests, or integrating Twilio webhooks with Next.js App Router, I value architectural clarity and measurable performance over hype.
+            </p>
+            <p class="font-mono text-xs p-3 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-300">
+              "Premature optimization is evil; bad architecture is catastrophic."
+            </p>
+          </div>
+
+          <!-- Highlight Feature Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="glass-panel p-4 rounded-xl border border-slate-200 dark:border-slate-800 flex items-start space-x-3 shadow-sm dark:shadow-none">
+              <div class="p-2.5 rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-100 dark:bg-cyan-500/10 dark:text-cyan-400 dark:border-cyan-500/20 shrink-0">
+                <i data-lucide="cpu" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm">Distributed Systems</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">Microservices, low-latency RPC, WebSockets & container orchestration.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel p-4 rounded-xl border border-slate-200 dark:border-slate-800 flex items-start space-x-3 shadow-sm dark:shadow-none">
+              <div class="p-2.5 rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-100 dark:bg-indigo-500/10 dark:text-indigo-400 dark:border-indigo-500/20 shrink-0">
+                <i data-lucide="database" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm">Data Architecture</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">PostgreSQL indexing, MongoDB aggregation pipelines & Redis caching.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Profile Card & Quick Info -->
+        <div class="lg:col-span-5">
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-slate-200 dark:border-slate-700/80 shadow-xl dark:shadow-2xl relative">
+            <div class="flex items-center space-x-4 mb-6">
+              <div class="w-16 h-16 rounded-2xl bg-slate-900 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 flex items-center justify-center font-mono font-extrabold text-2xl text-indigo-600 dark:text-cyan-400 shadow-sm">
+                DD
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Digvijay Deshmukh</h3>
+                <p class="text-xs text-indigo-600 dark:text-cyan-400 font-mono font-semibold">@digvijay-555</p>
+                <div class="flex items-center space-x-1.5 mt-1 text-xs text-slate-600 dark:text-slate-400">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400"></i>
+                  <span>India • Available Remote & Global</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-3 font-mono text-xs border-t border-slate-200 dark:border-slate-800 pt-5">
+              <div class="flex justify-between py-1.5 border-b border-slate-100 dark:border-slate-800/60">
+                <span class="text-slate-500 dark:text-slate-400">Background:</span>
+                <span class="text-slate-900 dark:text-slate-200 font-semibold">Ex-Google SWE Intern</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-slate-100 dark:border-slate-800/60">
+                <span class="text-slate-500 dark:text-slate-400">Education:</span>
+                <span class="text-slate-900 dark:text-slate-200 font-medium">IIIT Lucknow (B.Tech CSE)</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-slate-100 dark:border-slate-800/60">
+                <span class="text-slate-500 dark:text-slate-400">Primary Stack:</span>
+                <span class="text-indigo-600 dark:text-cyan-400 font-semibold">Go, Node.js, TypeScript, Postgres</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-slate-100 dark:border-slate-800/60">
+                <span class="text-slate-500 dark:text-slate-400">Email:</span>
+                <span class="text-slate-900 dark:text-slate-200 truncate ml-2 font-medium">digvijaydeshmukh5555@outlook.com</span>
+              </div>
+              <div class="flex justify-between py-1.5">
+                <span class="text-slate-500 dark:text-slate-400">Status:</span>
+                <span class="text-emerald-700 dark:text-emerald-400 font-bold">Open to SWE Roles</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 space-y-2">
+              <a 
+                href="https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs transition-all flex items-center justify-center space-x-2 shadow-sm"
+              >
+                <i data-lucide="file-text" class="w-4 h-4"></i>
+                <span>View Full Resume (PDF)</span>
+              </a>
+              <a 
+                href="https://github.com/digvijay-555" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="w-full py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-200 font-semibold text-xs transition-all flex items-center justify-center space-x-2"
+              >
+                <i data-lucide="github" class="w-4 h-4"></i>
+                <span>Visit GitHub Profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-mono text-indigo-600 dark:text-cyan-400 uppercase tracking-widest font-bold">Get In Touch</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">Contact & Coordinates</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Have a role, high-impact project, or technical conversation? Reach out directly.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 max-w-5xl mx-auto items-start">
+        
+        <!-- Left: Direct Coordinates -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-slate-200 dark:border-slate-700/80 shadow-lg dark:shadow-2xl">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Direct Contact</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Copy my email or connect directly through LinkedIn or GitHub.</p>
+
+            <div class="space-y-4">
+              <!-- Email Card -->
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                <div class="flex items-center space-x-3 overflow-hidden">
+                  <div class="p-2.5 rounded-lg bg-indigo-50 dark:bg-cyan-500/10 text-indigo-600 dark:text-cyan-400 border border-indigo-100 dark:border-cyan-500/20 shrink-0">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                  </div>
+                  <div class="overflow-hidden">
+                    <span class="text-[11px] font-mono text-slate-500 dark:text-slate-400 block font-medium">EMAIL ADDRESS</span>
+                    <span class="text-xs font-mono text-slate-900 dark:text-white truncate block font-semibold">digvijaydeshmukh5555@outlook.com</span>
+                  </div>
+                </div>
+                <button id="copy-email-btn" class="p-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-cyan-500/20 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-cyan-400 border border-slate-200 dark:border-transparent transition-colors ml-2 shrink-0 shadow-sm dark:shadow-none" title="Copy to clipboard">
+                  <i data-lucide="copy" class="w-4 h-4"></i>
+                </button>
+              </div>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/digvijay-555" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-cyan-500/40 transition-colors flex items-center justify-between group">
+                <div class="flex items-center space-x-3">
+                  <div class="p-2.5 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-cyan-400 border border-slate-200 dark:border-transparent shrink-0 shadow-sm dark:shadow-none">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-mono text-slate-500 dark:text-slate-400 block">GITHUB</span>
+                    <span class="text-xs font-mono text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-cyan-400 transition-colors font-semibold">github.com/digvijay-555</span>
+                  </div>
+                </div>
+                <i data-lucide="external-link" class="w-4 h-4 text-slate-400 dark:text-slate-500 group-hover:text-indigo-600 dark:group-hover:text-cyan-400 transition-colors"></i>
+              </a>
+
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/digvijaydeshmukh555" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-indigo-500/40 transition-colors flex items-center justify-between group">
+                <div class="flex items-center space-x-3">
+                  <div class="p-2.5 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 border border-slate-200 dark:border-transparent shrink-0 shadow-sm dark:shadow-none">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-mono text-slate-500 dark:text-slate-400 block">LINKEDIN</span>
+                    <span class="text-xs font-mono text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors font-semibold">in/digvijaydeshmukh555</span>
+                  </div>
+                </div>
+                <i data-lucide="external-link" class="w-4 h-4 text-slate-400 dark:text-slate-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"></i>
+              </a>
+
+              <!-- Resume Card -->
+              <a href="https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-cyan-500/40 transition-colors flex items-center justify-between group">
+                <div class="flex items-center space-x-3">
+                  <div class="p-2.5 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-cyan-400 border border-slate-200 dark:border-transparent shrink-0 shadow-sm dark:shadow-none">
+                    <i data-lucide="file-text" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-mono text-slate-500 dark:text-slate-400 block">RESUME DOCUMENT</span>
+                    <span class="text-xs font-mono text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-cyan-400 transition-colors font-semibold">View PDF on Google Drive</span>
+                  </div>
+                </div>
+                <i data-lucide="external-link" class="w-4 h-4 text-slate-400 dark:text-slate-500 group-hover:text-indigo-600 dark:group-hover:text-cyan-400 transition-colors"></i>
+              </a>
+
+              <!-- Status Card -->
+              <div class="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20">
+                <div class="flex items-center space-x-2 text-emerald-800 dark:text-emerald-400 font-mono text-xs font-semibold mb-1">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span>CURRENT STATUS</span>
+                </div>
+                <p class="text-xs text-slate-700 dark:text-slate-300">Actively open to full-time Software Engineering roles, backend positions, and high-impact teams.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Message Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-slate-200 dark:border-slate-700/80 shadow-lg dark:shadow-2xl">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Send a Message</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-6">Leave your details and message below, and I will respond to your email promptly.</p>
+
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-slate-700 dark:text-slate-400 mb-1.5 font-semibold">YOUR NAME *</label>
+                  <input 
+                    type="text" 
+                    id="form-name" 
+                    required 
+                    placeholder="e.g. Alex Rivera" 
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:focus:border-cyan-400 dark:focus:ring-cyan-400 shadow-sm dark:shadow-none transition-colors"
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-slate-700 dark:text-slate-400 mb-1.5 font-semibold">EMAIL ADDRESS *</label>
+                  <input 
+                    type="email" 
+                    id="form-email" 
+                    required 
+                    placeholder="alex@company.com" 
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:focus:border-cyan-400 dark:focus:ring-cyan-400 shadow-sm dark:shadow-none transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-700 dark:text-slate-400 mb-1.5 font-semibold">SUBJECT</label>
+                <input 
+                  type="text" 
+                  id="form-subject" 
+                  placeholder="Software Engineering Role / Project Inquiry" 
+                  class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:focus:border-cyan-400 dark:focus:ring-cyan-400 shadow-sm dark:shadow-none transition-colors"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-700 dark:text-slate-400 mb-1.5 font-semibold">MESSAGE *</label>
+                <textarea 
+                  id="form-message" 
+                  rows="4" 
+                  required 
+                  placeholder="Tell me about your team, tech stack, or problem you are solving..." 
+                  class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:focus:border-cyan-400 dark:focus:ring-cyan-400 shadow-sm dark:shadow-none transition-colors"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit" 
+                id="contact-submit-btn" 
+                class="w-full py-3.5 px-6 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-md font-bold text-sm transition-all flex items-center justify-center space-x-2"
+              >
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-slate-200 dark:border-slate-800/80 bg-slate-100 dark:bg-[#060910] py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-lg bg-slate-900 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 flex items-center justify-center text-indigo-600 dark:text-cyan-400 font-mono font-bold text-xs">
+            DD
+          </div>
+          <div>
+            <p class="text-sm font-bold text-slate-900 dark:text-white">Digvijay Deshmukh</p>
+            <p class="text-xs text-slate-500">Software Engineer • Ex-Google SWE Intern • IIIT Lucknow</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-600 dark:text-slate-400 font-medium">
+          <a href="https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors font-semibold">Resume (PDF)</a>
+          <a href="#about" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">About</a>
+          <a href="#experience" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Experience</a>
+          <a href="#projects" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Projects</a>
+          <a href="#skills" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Skills</a>
+          <a href="#terminal" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Terminal</a>
+          <a href="#contact" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Contact</a>
+        </div>
+
+        <div class="text-xs text-slate-500 font-mono">
+          &copy; 2026 Digvijay Deshmukh • All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/70 backdrop-blur-md modal-backdrop">
+    <div class="glass-panel modal-content max-w-2xl w-full p-6 sm:p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeProjectModal()" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 dark:bg-slate-800/80 dark:hover:bg-slate-700 dark:text-slate-400 dark:hover:text-white transition-colors" aria-label="Close Modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="mb-3">
+        <span id="modal-badge" class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-indigo-50 dark:bg-cyan-500/10 text-indigo-700 dark:text-cyan-300 border border-indigo-200 dark:border-cyan-500/30"></span>
+      </div>
+
+      <h3 id="modal-title" class="text-2xl font-bold text-slate-900 dark:text-white mb-3"></h3>
+      <p id="modal-desc" class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed mb-6"></p>
+
+      <div class="mb-6">
+        <h4 class="text-xs font-mono text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mb-3">Architecture & Technical Highlights</h4>
+        <ul id="modal-highlights" class="space-y-2"></ul>
+      </div>
+
+      <div class="mb-6">
+        <h4 class="text-xs font-mono text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mb-2">Technologies Used</h4>
+        <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+      </div>
+
+      <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-end space-x-3">
+        <a id="modal-live" href="#" target="_blank" rel="noopener noreferrer" class="hidden px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs items-center space-x-2 transition-all shadow-sm">
+          <i data-lucide="globe" class="w-4 h-4"></i>
+          <span>Open Live App</span>
+        </a>
+        <a id="modal-github" href="#" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white dark:bg-slate-800 dark:hover:bg-slate-700 font-semibold text-xs flex items-center space-x-2 transition-all shadow-sm">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>View Source on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Floating Box -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 hidden glass-panel p-4 rounded-2xl border border-indigo-200 dark:border-cyan-500/40 shadow-xl flex items-center space-x-3 max-w-md">
+    <div class="p-2 rounded-xl bg-indigo-50 dark:bg-cyan-500/20 text-indigo-600 dark:text-cyan-400 shrink-0">
+      <i id="toast-icon" data-lucide="info" class="w-5 h-5"></i>
+    </div>
+    <span id="toast-message" class="text-xs sm:text-sm text-slate-900 dark:text-white font-medium"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
