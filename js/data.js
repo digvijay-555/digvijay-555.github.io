@@ -32,7 +32,7 @@ const PORTFOLIO_DATA = {
       "I believe good architecture is deterministic and resilient: from event-driven pub/sub pipelines and Kubernetes orchestration to clean REST/gRPC API contracts and optimized database queries."
     ],
     stats: [
-      { number: "Google", label: "SWE Intern (Summer 2024)", icon: "briefcase" },
+      { number: "Google", label: "SWE Intern (Summer 2026)", icon: "briefcase" },
       { number: "IIIT Lucknow", label: "B.Tech Computer Science", icon: "graduation-cap" },
       { number: "15+", label: "GitHub Repositories", icon: "folder-git-2" },
       { number: "Production", label: "Fullstack & Cloud Apps", icon: "rocket" }
@@ -201,7 +201,7 @@ const PORTFOLIO_DATA = {
       role: "Software Engineering Intern",
       company: "Google",
       badge: "Google SWE Intern",
-      period: "Summer 2024",
+      period: "Summer 2026",
       location: "Bangalore, India",
       description: "Contributed to distributed systems infrastructure and cloud backend services. Analyzed low-latency microservice RPC communication, streamlined data pipelines, and optimized test automation for mission-critical services.",
       skills: ["Distributed Systems", "Go", "C++", "Microservices", "Cloud Infrastructure", "gRPC", "Performance Profiling"]
@@ -240,7 +240,7 @@ const PORTFOLIO_DATA = {
       resume: "Opening Official Resume...\nDirect Link: https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link\n(Opening in a new tab...)",
       skills: "Technical Skills Matrix:\n  [Backend]   Node.js, Express, Go, Distributed Systems, REST, gRPC, WebSockets\n  [Database]  PostgreSQL, MongoDB, Redis, MySQL\n  [DevOps]    Docker, Kubernetes, Linux, Bash, Git, GitHub Actions, AWS\n  [Frontend]  React, Next.js 16 (App Router), TypeScript, Tailwind CSS",
       projects: "Selected Projects:\n  1. Expense Tracker   - Fullstack Next.js 16 app with WhatsApp bot (Live: expense-tracker-745g.vercel.app)\n  2. Watch-Along       - Synchronized media platform (Kubernetes manifests, Docker, WebSockets)\n  3. inox              - Concurrent Go backend engine\n  4. YouTube Backend   - High-throughput video streaming, auth & aggregation\n  5. Trust-to-Stake    - Decentralized staking protocol for Monad ecosystem\n  6. Artistify         - Solidity smart contract art registry & royalties\n(Scroll to the Projects section to inspect direct GitHub repos & demos!)",
-      experience: "Career Highlights:\n  • Google (Summer 2024): Software Engineering Intern - Distributed systems & cloud infrastructure\n  • IIIT Lucknow (2021 - 2025): B.Tech Computer Science & Engineering\n  • Open Source (2023 - Present): Backend & Distributed Systems Builder",
+      experience: "Career Highlights:\n  • Google (Summer 2026): Software Engineering Intern - Distributed systems & cloud infrastructure\n  • IIIT Lucknow (2021 - 2025): B.Tech Computer Science & Engineering\n  • Open Source (2023 - Present): Backend & Distributed Systems Builder",
       contact: "Direct Coordinates:\n  • Email:    digvijaydeshmukh5555@outlook.com\n  • LinkedIn: https://www.linkedin.com/in/digvijaydeshmukh555\n  • GitHub:   https://github.com/digvijay-555\n  • Twitter:  https://x.com/0xdigvijay555\n  • Status:   Open to full-time roles & high-impact teams",
       status: "STATUS: Available for full-time software engineering roles, backend positions, and high-impact teams.",
       "sudo hire": "ACCESS GRANTED!\n🎉 Excellent decision! Let's build something remarkable together.\nRedirecting your focus to the contact section below...",
