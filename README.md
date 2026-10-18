@@ -1,6 +1,6 @@
 # Digvijay Deshmukh - Software Engineer Portfolio
 
-Personal portfolio for **Digvijay Deshmukh** (Software Engineer, Ex-Google SWE Intern, IIIT Lucknow CSE). Built with pure semantic HTML5, modern Tailwind CSS, and vanilla ES6+ JavaScript. Zero build steps, zero bloated dependencies, ultra-fast performance.
+Personal portfolio for **Digvijay Deshmukh** (Software Engineer, Ex-Google SWE Intern, IIIT Lucknow B.Tech Computer Science & Artificial Intelligence, 2023–2027). Built with pure semantic HTML5, modern Tailwind CSS, and vanilla ES6+ JavaScript. Zero build steps, zero bloated dependencies, ultra-fast performance.
 
 ---
 
@@ -12,7 +12,7 @@ Personal portfolio for **Digvijay Deshmukh** (Software Engineer, Ex-Google SWE I
 - **🌓 High-Contrast Dark & Light Mode**: Custom-engineered color palette with high contrast Slate-900 / Slate-700 typography for light mode and obsidian slate for dark mode.
 - **🛠️ Authentic Engineering Architecture**: Categorized technical proficiencies without fake percentage bars, featuring operational tags (`Production`, `Proficient`, `Core`).
 - **📂 Real GitHub Repositories**: Showcase for Expense Tracker (Next.js 16 + WhatsApp bot), Watch-Along (Kubernetes manifests + WebSockets), inox (Go systems engine), YouTube Backend, and Trust-to-Stake.
-- **📍 Verified Career Milestones**: Google Software Engineering Internship and IIIT Lucknow Computer Science coursework.
+- **📍 Verified Career Milestones**: Google Software Engineering Internship and IIIT Lucknow Computer Science & Artificial Intelligence coursework.
 
 ---
 

@@ -14,7 +14,7 @@ const PORTFOLIO_DATA = {
     subtitle: "Ex-Google SWE Intern • IIIT Lucknow",
     tagline: "Architecting high-throughput backend services, distributed systems, and real-time web platforms.",
     education: "Indian Institute of Information Technology (IIIT) Lucknow",
-    degree: "B.Tech in Computer Science & Engineering",
+    degree: "B.Tech in Computer Science & Artificial Intelligence",
     location: "India • Available Globally / Remote",
     email: "digvijaydeshmukh5555@outlook.com",
     altEmail: "digvijaydeshmukh5555@gmail.com",
@@ -27,13 +27,13 @@ const PORTFOLIO_DATA = {
       text: "Open to Full-Time SWE Roles & High-Impact Opportunities"
     },
     bio: [
-      "I am a Software Engineer and former Software Engineering Intern at Google, with an academic foundation in Computer Science & Engineering from IIIT Lucknow.",
+      "I am a Software Engineer and former Software Engineering Intern at Google, with an academic foundation in Computer Science & Artificial Intelligence from IIIT Lucknow.",
       "My engineering focus centers on backend architectures, low-latency microservices, distributed systems, and production full-stack platforms.",
       "I believe good architecture is deterministic and resilient: from event-driven pub/sub pipelines and Kubernetes orchestration to clean REST/gRPC API contracts and optimized database queries."
     ],
     stats: [
       { number: "Google", label: "SWE Intern (Summer 2026)", icon: "briefcase" },
-      { number: "IIIT Lucknow", label: "B.Tech Computer Science", icon: "graduation-cap" },
+      { number: "IIIT Lucknow", label: "B.Tech CS & AI (2023 - 2027)", icon: "graduation-cap" },
       { number: "15+", label: "GitHub Repositories", icon: "folder-git-2" },
       { number: "Production", label: "Fullstack & Cloud Apps", icon: "rocket" }
     ]
@@ -207,22 +207,13 @@ const PORTFOLIO_DATA = {
       skills: ["Distributed Systems", "Go", "C++", "Microservices", "Cloud Infrastructure", "gRPC", "Performance Profiling"]
     },
     {
-      role: "B.Tech in Computer Science & Engineering",
+      role: "B.Tech in Computer Science & Artificial Intelligence",
       company: "Indian Institute of Information Technology (IIIT) Lucknow",
       badge: "IIIT Lucknow",
-      period: "2021 - 2025",
+      period: "2023 - 2027",
       location: "Lucknow, India",
-      description: "Rigorous coursework and research in Distributed Systems, Data Structures & Algorithms, Operating Systems, Database Management Systems (DBMS), and Computer Networks.",
-      skills: ["Data Structures & Algorithms", "Operating Systems", "DBMS", "Computer Networks", "System Design"]
-    },
-    {
-      role: "Full-Stack & Backend Systems Engineer",
-      company: "Open Source Initiatives",
-      badge: "Open Source",
-      period: "2023 - Present",
-      location: "Remote",
-      description: "Designing and building resilient backend architectures, API gateways, and distributed applications. Leading open-source development for Expense Tracker, Watch-Along, and high-performance Go services.",
-      skills: ["Next.js 16", "TypeScript", "Node.js", "Docker", "Kubernetes", "MongoDB", "PostgreSQL", "Redis"]
+      description: "Rigorous coursework and research in Artificial Intelligence, Machine Learning, Distributed Systems, Data Structures & Algorithms, Operating Systems, Database Management Systems (DBMS), and Computer Networks.",
+      skills: ["Data Structures & Algorithms", "Artificial Intelligence", "Operating Systems", "DBMS", "Computer Networks", "System Design"]
     }
   ],
 
@@ -240,7 +231,7 @@ const PORTFOLIO_DATA = {
       resume: "Opening Official Resume...\nDirect Link: https://drive.google.com/file/d/1eeOaL_2Vn6cubnaiYCWjulryKE0c2u2y/view?usp=drive_link\n(Opening in a new tab...)",
       skills: "Technical Skills Matrix:\n  [Backend]   Node.js, Express, Go, Distributed Systems, REST, gRPC, WebSockets\n  [Database]  PostgreSQL, MongoDB, Redis, MySQL\n  [DevOps]    Docker, Kubernetes, Linux, Bash, Git, GitHub Actions, AWS\n  [Frontend]  React, Next.js 16 (App Router), TypeScript, Tailwind CSS",
       projects: "Selected Projects:\n  1. Expense Tracker   - Fullstack Next.js 16 app with WhatsApp bot (Live: expense-tracker-745g.vercel.app)\n  2. Watch-Along       - Synchronized media platform (Kubernetes manifests, Docker, WebSockets)\n  3. inox              - Concurrent Go backend engine\n  4. YouTube Backend   - High-throughput video streaming, auth & aggregation\n  5. Trust-to-Stake    - Decentralized staking protocol for Monad ecosystem\n  6. Artistify         - Solidity smart contract art registry & royalties\n(Scroll to the Projects section to inspect direct GitHub repos & demos!)",
-      experience: "Career Highlights:\n  • Google (Summer 2026): Software Engineering Intern - Distributed systems & cloud infrastructure\n  • IIIT Lucknow (2021 - 2025): B.Tech Computer Science & Engineering\n  • Open Source (2023 - Present): Backend & Distributed Systems Builder",
+      experience: "Career Highlights:\n  • Google (Summer 2026): Software Engineering Intern - Distributed systems & cloud infrastructure\n  • IIIT Lucknow (2023 - 2027): B.Tech Computer Science & Artificial Intelligence",
       contact: "Direct Coordinates:\n  • Email:    digvijaydeshmukh5555@outlook.com\n  • LinkedIn: https://www.linkedin.com/in/digvijaydeshmukh555\n  • GitHub:   https://github.com/digvijay-555\n  • Twitter:  https://x.com/0xdigvijay555\n  • Status:   Open to full-time roles & high-impact teams",
       status: "STATUS: Available for full-time software engineering roles, backend positions, and high-impact teams.",
       "sudo hire": "ACCESS GRANTED!\n🎉 Excellent decision! Let's build something remarkable together.\nRedirecting your focus to the contact section below...",
